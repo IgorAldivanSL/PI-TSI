@@ -1,36 +1,37 @@
 
-/* Cabeçalho */
+@use './partials/variables' as *;
+
+/*Seçao 1*/
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #ffffff;
+    padding: 20px 60px;
+    background-color: #f8f8f8;
+}
 
-    .logo img {
-        width: 50px;
-    }
+header .logo img {
+    width: 50px;
+}
 
-    nav {
-        display: flex;
-        gap: 20px;
+header nav {
+    display: flex;
+    gap: 20px;
+}
 
-        ul{
-            list-style-type: none;
-        }
+header nav ul{
+    list-style-type: none;
+}
 
-        li{
-            display: inline;
-            padding: 30px;
-        }
+header nav ul li{
+    display: inline;
+    padding: 30px;
+}
 
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: large;
-            padding: 40px;
-        }
-    }
-    
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    padding: 40px;
 }

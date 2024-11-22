@@ -1,0 +1,295 @@
+
+@import "partials/variables.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/*Seçao 1*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #f8f8f8;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    padding: 40px;
+}
+
+
+.botao-contato {
+    background-color: #FF8548;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.botao-contato:hover {
+    background-color: #ff503e;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+.conteudo-texto h1 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.conteudo-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.botoes {
+    display: flex;
+    gap: 50px;
+    
+}
+
+.botao-reservar {
+    background-color: #FF8548;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-reservar:hover {
+    background-color: #ff503e;
+}
+
+.botao-duvidas {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-duvidas:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Imagem Sessão 1 */
+.imagem-principal img {
+    width: 900px;
+    margin: 40px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+/*Seçao2*/
+
+.destinos {
+    border-radius: 20px;
+    margin: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #FF8548;
+}
+
+.destinos h1 {
+    color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+.destinos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destino-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.destino-card img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.destino-card h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.destino-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FF914D;
+    margin-bottom: 10px;
+}
+
+.data {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.data span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.data-valor {
+    font-weight: bold;
+    color: #000000;
+}
+
+.btn-reservar {
+    background-color: #114A49;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:bold;
+    width: 100%;
+}
+
+.btn-reservar:hover {
+    background-color: #ff503e;
+}
+
+
+/*Sessão 3*/
+
+
+
+.container-sessao3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+/* Imagem sessão 3 */
+.imagem-sessao3 {
+    width: 800px;
+    text-align: center;
+}
+
+
+/* Texto sessão 3 */
+.texto-sessao3 {
+    flex: 2;
+    max-width: 600px;
+    margin-right: 202px;
+}
+
+.texto-sessao3 h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.texto-sessao3 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Benefícios */
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.beneficios-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: linear-gradient(90deg, #FF8548, #FF4F7C);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.beneficios-texto h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.beneficios-texto p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}

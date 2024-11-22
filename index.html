@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R Trips</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!--Header-->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo R Trips">
@@ -15,61 +16,120 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Início</a>
-                    <a href="#">Destinos</a>
-                    <a href="#">Vantagens</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Depoimentos</a>
+                    <a href="#inicio">Início</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#vantagens">Vantagens</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#depoimentos">Depoimentos</a>
                 </li>
             </ul>
         </nav>
         <button class="botao-contato">Contato</button>
     </header>
 
-    <main>
-        <div class="conteudo-texto">
-            <h1>O mundo espera</h1>
-            <h1>pelas suas próximas memórias</h1>
-            <p>Roteiros exclusivos, suporte completo e experiências inesquecíveis. Viaje com a R Trips!</p>
-            <div class="botoes">
-                <button class="botao-reservar">Reservar minhas passagens</button>
-                <button class="botao-duvidas">Tirar dúvidas</button>
-            </div>
-        </div>
-        <div class="conteudo-imagem">
-            <img src="praia.jpg">
-        </div>
-    </main>
+    <!--Sessão 1 -->
 
-    <div id="seçao2" class="container">
-        <h1>Conheça nossos Destinos</h1>
-        <div class="container-cards">
-            <div class="card1">
-                <img src="cards.jpg" alt="">
-                <h2>Beto carrero</h2>
-                <p>lorem ipsum hhhhhhh lorem ipsum hhhhhhh</p>
-                <div class="dividavolta1">
-                    <p>Ida</p>
-                    <P>Volta</P>
+    <section id="inicio">
+        <main>
+            <div class="conteudo-texto">
+                <h1>O mundo espera</h1>
+                <h1>pelas suas próximas memórias</h1>
+                <p>Roteiros exclusivos, suporte completo e experiências inesquecíveis. Viaje com a R Trips!</p>
+                <div class="botoes">
+                    <button class="botao-reservar">Reservar minhas passagens</button>
+                    <button class="botao-duvidas">Tirar dúvidas</button>
                 </div>
-                <div class="button"></div>
             </div>
-            <div class="card2">
-                <img src="cards.jpg" alt="">
-                <h2>Beto carrero</h2>
-                <p>lorem ipsum hhhhhhh lorem ipsum hhhhhhh</p>
+            <div class="imagem-principal">
+                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif" alt="Imagem de praia">
             </div>
-            <div class="card3">
-                <img src="cards.jpg" alt="">
-                <h2>Beto carrero</h2>
-                <p>lorem ipsum hhhhhhh lorem ipsum hhhhhhh</p>
+        </main>
+    </section>
+    
+<!-- Sessão 2 -->
+
+    <section id="destinos" class="destinos">
+        <h1>Conheça nossos destinos</h1>
+        <div class="destinos-container">
+        
+            <div class="destino-card">
+                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
+                <h2>Beto Carrero</h2>
+                <p>O maior parque temático das Américas Latinas, repleto de atrações e espetáculos para todas as idades.</p>
+                <div class="preco">R$ 249</div>
+                <div class="data">
+                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
+                </div>
+                <button class="btn-reservar">Reservar passagem</button>
             </div>
-            <div class="card4">
-                <img src="cards.jpg" alt="">
-                <h2>Beto carrero</h2>
-                <p>lorem ipsum hhhhhhh lorem ipsum hhhhhhh</p>
+
+            <div class="destino-card">
+                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
+                <h2>Campos do Jordão</h2>
+                <p>A estação de montanha perfeita, com clima europeu, arquitetura charmosa e paisagens deslumbrantes.</p>
+                <div class="preco">R$ 249</div>
+                <div class="data">
+                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
+                </div>
+                <button class="btn-reservar">Reservar passagem</button>
+            </div>
+
+            <div class="destino-card">
+                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
+                <h2>Ilha Bela</h2>
+                <p>Um paraíso tropical com praias paradisíacas, trilhas ecológicas e muita natureza exuberante.</p>
+                <div class="preco">R$ 249</div>
+                <div class="data">
+                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
+                </div>
+                <button class="btn-reservar">Reservar passagem</button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Sessão 3 -->
+
+    <section id="vantagens">
+
+        <div class="container-sessao3">
+            <div class="imagem-sessao3">
+                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif" alt="Viajante com mala">
+            </div>
+            <div class="texto-sessao3">
+                <h1>Por que nos escolher a R trips?</h1>
+                <p>
+                    Oferecemos roteiros cuidadosamente planejados, guias experientes e suporte completo do início ao fim.
+                    Além disso, priorizamos conforto, segurança e momentos únicos, garantindo que cada viagem seja inesquecível
+                    e adaptada às suas expectativas.
+                </p>
+                <div class="beneficios">
+                    <div class="beneficios-texto">
+                        <span class="icon">✔</span>
+                        <div>
+                            <h2>Experiências Enriquecedoras</h2>
+                            <p>Explorar novos destinos permite mergulhar em diferentes culturas, gastronomias e tradições.</p>
+                        </div>
+                    </div>
+                    <div class="beneficios-texto">
+                        <span class="icon">✔</span>
+                        <div>
+                            <h2>Comodidade e Segurança</h2>
+                            <p>Fazer uma excursão elimina o estresse de organizar todos os detalhes da viagem.</p>
+                        </div>
+                    </div>
+                    <div class="beneficios-texto">
+                        <span class="icon">✔</span>
+                        <div>
+                            <h2>Novas Amizades</h2>
+                            <p>Viajar em grupo possibilita conhecer novas pessoas com interesses similares.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
