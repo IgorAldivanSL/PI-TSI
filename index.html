@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R Trips</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
     <!--Header-->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo R Trips">
+            <img src="/assets/logo.png" alt="Logo R Trips">
         </div>
         <nav>
             <ul>
@@ -26,78 +28,94 @@
         </nav>
         <button class="botao-contato">Contato</button>
     </header>
+    
 
-    <!--Sessão 1 -->
+   <!-- Sessão 1: Banner -->
+<section class="banner">
+    <div class="coluna-1 conteudo-texto">
 
-    <section id="inicio">
-        <main>
-            <div class="conteudo-texto">
-                <h1>O mundo espera</h1>
-                <h1>pelas suas próximas memórias</h1>
-                <p>Roteiros exclusivos, suporte completo e experiências inesquecíveis. Viaje com a R Trips!</p>
-                <div class="botoes">
-                    <button class="botao-reservar">Reservar minhas passagens</button>
-                    <button class="botao-duvidas">Tirar dúvidas</button>
-                </div>
-            </div>
-            <div class="imagem-principal">
-                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif" alt="Imagem de praia">
-            </div>
-        </main>
-    </section>
+        <h1>O mundo espera pelas suas próximas memórias</h1>
+        <p>Roteiros exclusivos, suporte completo e experiências inesquecíveis. Viaje com a R Trips!</p>
+        <div class="botoes">
+            <button class="botao-reservar">Reservar minhas passagens</button>
+            <button class="botao-duvidas">Tirar dúvidas</button>
+        </div>
+    </div>
+    <div class="coluna-2 imagem-principal">
+        <img src="/assets/mulher-na-praia.png" alt="Imagem de praia">
+    </div>
+</section>
+
     
 <!-- Sessão 2 -->
-
-    <section id="destinos" class="destinos">
-        <h1>Conheça nossos destinos</h1>
-        <div class="destinos-container">
-        
-            <div class="destino-card">
-                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
-                <h2>Beto Carrero</h2>
-                <p>O maior parque temático das Américas Latinas, repleto de atrações e espetáculos para todas as idades.</p>
-                <div class="preco">R$ 249</div>
-                <div class="data">
-                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
-                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
-                </div>
-                <button class="btn-reservar">Reservar passagem</button>
+<section id="destinos" class="destinos">
+    <h2>Conheça nossos destinos</h2>
+    <div class="destinos-container">
+    
+        <div class="destino-card">
+            <div class="img-card">
+                <img src="/assets/beto-carrero.png" alt="Beto Carrero">
+                <div class="preco">R$ 249</div> <!-- Preço dentro da .img-card -->
             </div>
 
-            <div class="destino-card">
-                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
-                <h2>Campos do Jordão</h2>
-                <p>A estação de montanha perfeita, com clima europeu, arquitetura charmosa e paisagens deslumbrantes.</p>
-                <div class="preco">R$ 249</div>
-                <div class="data">
-                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
-                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
-                </div>
-                <button class="btn-reservar">Reservar passagem</button>
+            <h3>Beto Carrero</h3>
+            <p>O maior parque temático das Américas Latinas, repleto de atrações e espetáculos para todas as idades.</p>
+            
+            <div class="data">
+                <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
             </div>
-
-            <div class="destino-card">
-                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif">
-                <h2>Ilha Bela</h2>
-                <p>Um paraíso tropical com praias paradisíacas, trilhas ecológicas e muita natureza exuberante.</p>
-                <div class="preco">R$ 249</div>
-                <div class="data">
-                    <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
-                    <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
-                </div>
-                <button class="btn-reservar">Reservar passagem</button>
-            </div>
+            <button class="btn-reservar">
+                <span>Reservar passagem</span>
+                <i class="fab fa-whatsapp"></i>
+            </button>
         </div>
-    </section>
+
+        <div class="destino-card">
+            <div class="img-card">
+                <img src="/assets/campos-jordao.png" alt="Campos do Jordão">
+                <div class="preco">R$ 249</div> <!-- Preço dentro da .img-card -->
+            </div>
+            <h3>Campos do Jordão</h3>
+            <p>A estação de montanha perfeita, com clima europeu, arquitetura charmosa e paisagens deslumbrantes.</p>
+            <div class="data">
+                <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
+            </div>
+            <button class="btn-reservar">
+                <span>Reservar passagem</span>
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </div>
+
+        <div class="destino-card">
+            <div class="img-card">
+                <img src="/assets/ilha-bela.png" alt="Ilha Bela">
+                <div class="preco">R$ 249</div> <!-- Preço dentro da .img-card -->
+            </div>
+            <h3>Ilha Bela</h3>
+            <p>Um paraíso tropical com praias paradisíacas, trilhas ecológicas e muita natureza exuberante.</p>
+            <div class="data">
+                <span>Ida</span> <span class="data-valor">Jun 10, 2024</span>
+                <span>Volta</span> <span class="data-valor">Jun 11, 2024</span>
+            </div>
+            <button class="btn-reservar">
+                <span>Reservar passagem</span>
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            
+        </div>
+
+    </div>
+</section>
 
     <!-- Sessão 3 -->
 
     <section id="vantagens">
-
-        <div class="container-sessao3">
-            <div class="imagem-sessao3">
-                <img src="bela-paisagem-a-beira-mar_23-2150423928.avif" alt="Viajante com mala">
-            </div>
+        <div class="coluna-1 imagem-sessao3">
+            <img src="/assets/vantagens.svg" alt="Viajante com mala">
+        </div>
+        <div class="coluna-2">
             <div class="texto-sessao3">
                 <h1>Por que nos escolher a R trips?</h1>
                 <p>
@@ -107,21 +125,21 @@
                 </p>
                 <div class="beneficios">
                     <div class="beneficios-texto">
-                        <span class="icon">✔</span>
+                        <i class=" icon fa-solid fa-circle-check"></i>                                                
                         <div>
                             <h2>Experiências Enriquecedoras</h2>
                             <p>Explorar novos destinos permite mergulhar em diferentes culturas, gastronomias e tradições.</p>
                         </div>
                     </div>
                     <div class="beneficios-texto">
-                        <span class="icon">✔</span>
+                        <i class=" icon fa-solid fa-circle-check"></i>  
                         <div>
                             <h2>Comodidade e Segurança</h2>
                             <p>Fazer uma excursão elimina o estresse de organizar todos os detalhes da viagem.</p>
                         </div>
                     </div>
                     <div class="beneficios-texto">
-                        <span class="icon">✔</span>
+                        <i class=" icon fa-solid fa-circle-check"></i>  
                         <div>
                             <h2>Novas Amizades</h2>
                             <p>Viajar em grupo possibilita conhecer novas pessoas com interesses similares.</p>
@@ -130,6 +148,8 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 </body>
 </html>

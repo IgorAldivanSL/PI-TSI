@@ -1,13 +1,14 @@
 
-@use './partials/variables' as *;
-
-/*Seçao 1*/
+/* ------------------------------- HEADER ------------------------------- */
 header {
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px 0px;
     background-color: #f8f8f8;
+    gap: 0;
+    flex-wrap: wrap;
 }
 
 header .logo img {
@@ -19,19 +20,44 @@ header nav {
     gap: 20px;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline;
-    padding: 30px;
 }
 
 header nav a {
     text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: large;
-    padding: 40px;
+    color: #000;
+font-weight: 500;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+
+}
+
+header nav a:hover {
+    border-radius: 10px;
+    background-color: #FF8548;
+    color: #fff;
+}
+
+
+/* Botão de Contato */
+.botao-contato {
+    background-color: #FF8548;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+    background-color: #ff503e;
 }
