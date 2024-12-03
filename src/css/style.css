@@ -53,7 +53,11 @@ header nav a {
 header nav li:hover {
   border-radius: 10px;
   background-color: #FF8548;
-  color: #fff !important;
+}
+
+a:hover{
+    color: #fff !important;
+
 }
 
 /* Botão de Contato */
