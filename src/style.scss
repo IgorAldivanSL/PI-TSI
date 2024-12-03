@@ -99,11 +99,18 @@ footer{
 
 /* ------------------------------- RESPONSIVIDADE ------------------------------- */
 @media (max-width: 768px) {
+    .destinos .destinos-container{
+        padding: 20px;
+    }
 
     header {
         flex-direction: column;
         text-align: center;
         margin-bottom: 10%;
+    }
+
+    .menu-toggle{
+        display: none !important;
     }
 
     .destinos-container {
