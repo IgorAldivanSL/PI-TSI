@@ -1,7 +1,7 @@
 // Em main.scss ou all.scss
 @use './sass/partials/variables' as *;
 @use './sass/partials/header' as *;
-@use './sass/partials/contact' as *;
+@use './sass/partials/contato' as *;
 @use './sass/partials/banner' as *;
 @use './sass/partials/trips' as *;
 @use './sass/partials/vantagens' as *;
@@ -32,11 +32,17 @@ h1 {
 }
 
 h2{
-    font-size: 2.5rem; // Tamanho padrão de fonte para h1
+    font-size: 2.1rem; // Tamanho padrão de fonte para h1
 }
 
 h1 + p {
     margin-top: 0; // Ajuste de margem para o parágrafo que segue o h1
+}
+
+p{
+        font-size: 1rem !important;
+        margin-bottom: 20px;
+        line-height: 1.6;
 }
 
 section {
@@ -74,6 +80,17 @@ section {
     display: none;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height:40px;
+    padding: 70px 0px;
+    align-items: center;
+    background-color: #114A49;
+    color: #fff
+    ;
+}
 
 /* ------------------------------- RESPONSIVIDADE ------------------------------- */
 @media (max-width: 768px) {
@@ -81,6 +98,7 @@ section {
     header {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 10%;
     }
 
     .destinos-container {
@@ -103,5 +121,150 @@ section {
     .botao-contato {
         width: 100%;
         margin-top: 20px;
+    }
+
+    .sobre img {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 60px !important;
+    }
+
+    .imagem-principal img {
+        display: none;
+    }
+
+    .img-mobile {
+        width: 100%;
+        height: auto;
+        display: block !important;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .coluna-1 {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .coluna-2 {
+        max-width: 100%;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #f8f8f8;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .depoimentos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .destinos {
+        margin-top: -20px;
+    }
+
+    .vantagens{
+        h2{
+            text-align: center !important;
+        }
+   
+        margin-bottom: 70px;
+        padding: 30px;
+        display: block;
+
+        img{
+            height: 10px !important;
+        }
+    }
+
+    .imagem-vantagens img {
+      display: none;
+    }
+
+    .sobre{
+        margin-top: -30px;
+        display: block;
+        padding:20px;
+
+        img{
+            height: 400px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .contato-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    .coluna-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .coluna-2 {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 20px;
     }
 }
