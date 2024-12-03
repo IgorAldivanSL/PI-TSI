@@ -50,7 +50,7 @@ header nav a {
   padding: 5px 20px;
 }
 
-header nav a:hover {
+header nav li:hover {
   border-radius: 10px;
   background-color: #FF8548;
   color: #fff;
