@@ -126,7 +126,7 @@ input:focus, textarea:focus {
   color: white;
   border: none;
   width: 300px;
-  padding: 20px;
+  padding: 15px;
   font-size: 16px;
   border-radius: 25px;
   cursor: pointer;
@@ -224,7 +224,7 @@ textarea {
 
 .destino-card {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 375px;
   padding: 15px;
@@ -275,10 +275,10 @@ textarea {
 }
 .destino-card .data .data-valor {
   background-color: #FF8548;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 10px;
   padding: 3px 5px;
-  color: #000;
+  color: #61321a;
 }
 .destino-card .btn-reservar {
   background-color: #114A49;
@@ -310,8 +310,9 @@ textarea {
 }
 
 /* ------------------------------- SEÇÃO 3 (Imagem + Texto + Benefícios) ------------------------------- */
-.texto-sessao3 {
+.texto-sessao3 p {
   flex: 2;
+  margin-top: 10px;
   max-width: 600px;
   margin-right: 40px;
 }
@@ -442,6 +443,7 @@ h1 {
 }
 
 h2 {
+  line-height: 40px;
   font-size: 2.1rem;
 }
 
