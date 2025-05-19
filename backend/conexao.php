@@ -16,7 +16,7 @@ try{
 //Essa linha cria
 //uma conexão com o banco de dados usando a classe PDO (PHP Data Objects).
 $pdo = new PDO($dsn, $user, $pass);
-echo "Conexão com o banco de dados foi bem sucediada!";
+echo "";
 }
 catch(PDOxception $e){
     echo "Erro ao tentar conectar ao banco de dados!<p>", $e;

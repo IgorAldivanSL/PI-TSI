@@ -21,7 +21,7 @@ try {
     $administradores = $result->fetchAll(PDO::FETCH_ASSOC); */
 
     //Usando declarações preparadas (recomendado):
-    $stmt = $pdo->prepare("SELECT * FROM ADMINISTRADOR"); //vai buscar todas as colunas da tabela ADMINISTRADOR
+    $stmt = $pdo->prepare("SELECT * FROM usuario "); //vai buscar todas as colunas da tabela ADMINISTRADOR
     $stmt->execute();  //***vide explicações sobre a dinâmica desses comandos no final do arquivo
     $administradores = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch = recuperar, buscar
     
