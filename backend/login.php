@@ -25,7 +25,7 @@ if(isset($_SESSION['mensagem_erro'])) {
     <div class="menu-container">
         <h2>Login do Administrador</h2>
         <form action="processa_login.php" method="post">
-            <label for="nome">Email:</label>
+            <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
             <p>
 

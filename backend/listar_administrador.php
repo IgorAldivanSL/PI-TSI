@@ -21,7 +21,7 @@ try {
     $administradores = $result->fetchAll(PDO::FETCH_ASSOC); */
 
     //Usando declarações preparadas (recomendado):
-    $stmt = $pdo->prepare("SELECT * FROM usuario "); //vai buscar todas as colunas da tabela ADMINISTRADOR
+    $stmt = $pdo->prepare("SELECT * FROM usuarios_adm "); //vai buscar todas as colunas da tabela ADMINISTRADOR
     $stmt->execute();  //***vide explicações sobre a dinâmica desses comandos no final do arquivo
     $administradores = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch = recuperar, buscar
     
@@ -138,14 +138,14 @@ function confirmDeletion() {
     </tr>
     <?php foreach($administradores as $adm): ?>
     <tr>
-        <td><?php echo $adm['ADM_ID']; ?></td>
-        <td><?php echo $adm['ADM_NOME']; ?></td>
-        <td><?php echo $adm['ADM_EMAIL']; ?></td>
-        <td><?php echo $adm['ADM_SENHA']; ?></td>
-        <td><?php echo ($adm['ADM_ATIVO'] == 1 ? 'Sim' : 'Não'); ?></td>
+        <td><?php echo $adm['adm_id']; ?></td>
+        <td><?php echo $adm['adm_nome']; ?></td>
+        <td><?php echo $adm['adm_email']; ?></td>
+        <td><?php echo $adm['adm_senha']; ?></td>
+        <td><?php echo ($adm['adm_ativo'] == 1 ? 'Sim' : 'Não'); ?></td>
         
         <td>
-            <a href="editar_administrador.php?id=<?php echo $adm['ADM_ID']; ?>" class="action-btn">Editar</a>
+            <a href="editar_administrador.php?id=<?php echo $adm['adm_id']; ?>" class="action-btn">Editar</a>
             <!-- A linha de código HTML acima, cria um link que, quando clicado, direciona o usuário para a página editar_administrador.php, passando o ID do administrador como um parâmetro GET na URL. Além disso, o link é estilizado com uma classe CSS chamada action-btn. 
             ?id=< ?php echo $adm['ADM_ID']; ?>: Esta parte é um parâmetro de query na URL. Após o nome do arquivo PHP (editar_administrador.php), o ? inicia a string de query. id= define uma variável de query chamada id, cujo valor é definido pelo trecho PHP < ?php echo $adm['ADM_ID']; ?>. Este código PHP insere dinamicamente o ID do administrador no link, pegando o valor da chave ADM_ID do array $adm. Isso significa que, para cada administrador listado, será gerado um link único que inclui seu respectivo ID como parte da URL. Essa técnica é comumente usada para passar informações entre páginas via URL
             

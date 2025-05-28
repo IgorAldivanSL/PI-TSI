@@ -8,7 +8,7 @@ require_once('conexao.php');
 
 // Verifica se o administrador está logado.
 if (!isset($_SESSION['admin_logado'])) {
-    header("Location:login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -26,14 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     // Inserindo administrador no banco.
     try {
-        $sql = "INSERT INTO ADMINISTRADOR (ADM_NOME, ADM_TELEFONE, ADM_CPF, ADM_EMAIL, ADM_SENHA, ADM_ATIVO) VALUES (:nome, :telefone, :cpf, :email, :senha, :ativo);";
+        $sql = "INSERT INTO usuarios_adm (adm_nome, adm_telefone, adm_cpf, adm_email, adm_senha) VALUES (:nome, :telefone, :cpf, :email, :senha);";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':nome', $nome, PDO::PARAM_STR);
         $stmt->bindParam(':telefone', $telefone, PDO::PARAM_STR);
         $stmt->bindParam(':cpf', $cpf, PDO::PARAM_STR);
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->bindParam(':senha', $senha, PDO::PARAM_STR);
-        $stmt->bindParam(':ativo', $ativo, PDO::PARAM_INT); 
 
         $stmt->execute(); // Adicionado para executar a instrução
 
@@ -53,15 +52,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de Administrador</title>
-
+    <title>Cadastro</title>
 </head>
 <body>
-    
-
-    <h2>Cadastrar Administrador</h2>
+    <h2>Cadastro</h2>
     <form action="" method="post" enctype="multipart/form-data">
-        <!-- Campos do formulário para inserir informações do administrador -->
+        
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" required>
         <p>
@@ -89,9 +85,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p>
         
         <p>
-        <button type="submit">Cadastrar Administrador</button>
+        <button type="submit">Cadastrar</button>
         <!-- Se você omitir o atributo type em um elemento <button> dentro de um formulário, o navegador assumirá por padrão que o botão é do tipo submit. Isso significa que, ao clicar no botão, o formulário ao qual o botão pertence será enviado. Mas é boa prática especificá-lo-->
 
         <p></p>
         <a href="painel_admin.php">Voltar ao Painel do Administrador</a>
     </form>
+</body>
