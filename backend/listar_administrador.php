@@ -40,7 +40,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>Listar Administradores</title>
-    <style> /* Início do bloco de estilos CSS */
+<style> /* Início do bloco de estilos CSS */
     /* Seleciona o elemento <body> de toda a página */
     body { 
         /* Define a família de fontes: Arial, com fallback sans-serif */
@@ -59,7 +59,7 @@ try {
 
     /* Seleciona células de cabeçalho (<th>) e de dados (<td>) */
     th, td { 
-        /* Aplica 10px de espaçamento interno em todas as direções */
+        /* Aplica 1    0px de espaçamento interno em todas as direções */
         padding: 10px; 
         /* Adiciona borda sólida de 1px com cor cinza claro (#ddd) */
         border: 1px solid #ddd; 
@@ -161,7 +161,7 @@ function confirmDeletion() {
             Dessa forma, usando query strings (?chave=valor), você passa informações entre páginas sem formulários, só com links dinâmicos.
                 -->
 
-            <a href="excluir_administrador.php?id=<?php echo $adm['ADM_ID']; ?>" class="action-btn delete-btn" onclick="return confirmDeletion();">Excluir</a>
+            <a href="excluir_administrador.php?id=<?php echo $adm['adm_id']; ?>" class="action-btn delete-btn" onclick="return confirmDeletion();">Excluir</a>
             <!-- O atributo onclick em um elemento HTML define um handler (ou “ouvinte”) de evento JavaScript que será executado quando o usuário clicar naquele elemento. Antes de seguir a URL (excluir_administrador.php?id=...), o navegador vai executar a função JavaScript confirmDeletion().O return é fundamental. Se confirmDeletion() retornar true, o clique prossegue normalmente e o navegador carrega a página apontada em href.Se retornar false, a ação padrão (navegar para href) é cancelada.-->
         </td>
 </tr>
